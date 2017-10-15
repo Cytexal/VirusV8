@@ -60,12 +60,12 @@
             this.Button_VirusShutdown = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_VirusExit = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.monoFlat_ButtonTXTSpam = new MonoFlat.Class1.MonoFlat_Button();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.timerSendMousePosition = new System.Windows.Forms.Timer(this.components);
             this.MessageCheckTimer = new System.Windows.Forms.Timer(this.components);
             this.bunifuFlatButtonSend = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.monoFlat_ButtonDektopTXT = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
@@ -117,10 +117,10 @@
             // 
             // metroTabControl1
             // 
+            this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
-            this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.CustomBackground = false;
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Medium;
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Light;
@@ -518,7 +518,7 @@
             // 
             // metroTabPage4
             // 
-            this.metroTabPage4.Controls.Add(this.monoFlat_ButtonDektopTXT);
+            this.metroTabPage4.Controls.Add(this.monoFlat_ButtonTXTSpam);
             this.metroTabPage4.CustomBackground = false;
             this.metroTabPage4.HorizontalScrollbar = false;
             this.metroTabPage4.HorizontalScrollbarBarColor = true;
@@ -536,6 +536,20 @@
             this.metroTabPage4.VerticalScrollbarBarColor = true;
             this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage4.VerticalScrollbarSize = 10;
+            // 
+            // monoFlat_ButtonTXTSpam
+            // 
+            this.monoFlat_ButtonTXTSpam.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_ButtonTXTSpam.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.monoFlat_ButtonTXTSpam.Image = null;
+            this.monoFlat_ButtonTXTSpam.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.monoFlat_ButtonTXTSpam.Location = new System.Drawing.Point(12, 12);
+            this.monoFlat_ButtonTXTSpam.Name = "monoFlat_ButtonTXTSpam";
+            this.monoFlat_ButtonTXTSpam.Size = new System.Drawing.Size(150, 40);
+            this.monoFlat_ButtonTXTSpam.TabIndex = 3;
+            this.monoFlat_ButtonTXTSpam.Text = ".txt Spam";
+            this.monoFlat_ButtonTXTSpam.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.monoFlat_ButtonTXTSpam.Click += new System.EventHandler(this.monoFlat_ButtonDektopTXT_Click);
             // 
             // bunifuCheckbox1
             // 
@@ -604,20 +618,6 @@
             this.bunifuFlatButtonSend.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButtonSend.Click += new System.EventHandler(this.bunifuFlatButtonSend_Click);
             // 
-            // monoFlat_ButtonDektopTXT
-            // 
-            this.monoFlat_ButtonDektopTXT.BackColor = System.Drawing.Color.Transparent;
-            this.monoFlat_ButtonDektopTXT.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.monoFlat_ButtonDektopTXT.Image = null;
-            this.monoFlat_ButtonDektopTXT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_ButtonDektopTXT.Location = new System.Drawing.Point(12, 12);
-            this.monoFlat_ButtonDektopTXT.Name = "monoFlat_ButtonDektopTXT";
-            this.monoFlat_ButtonDektopTXT.Size = new System.Drawing.Size(150, 40);
-            this.monoFlat_ButtonDektopTXT.TabIndex = 3;
-            this.monoFlat_ButtonDektopTXT.Text = "Desktop .txt";
-            this.monoFlat_ButtonDektopTXT.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.monoFlat_ButtonDektopTXT.Click += new System.EventHandler(this.monoFlat_ButtonDektopTXT_Click);
-            // 
             // ClientVerwaltung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -682,6 +682,6 @@
         private System.Windows.Forms.Timer MessageCheckTimer;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBoxSendText;
-        private MonoFlat.Class1.MonoFlat_Button monoFlat_ButtonDektopTXT;
+        private MonoFlat.Class1.MonoFlat_Button monoFlat_ButtonTXTSpam;
     }
 }
