@@ -15,8 +15,6 @@ using System.IO;
 
 namespace VirusV8_Client
 {
-    //Sack
-
     public partial class Form1 : Form
     {
         MouseFreeze mouseFreeze;
