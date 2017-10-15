@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoSpace.cs" />
+    <Compile Include="AutoEnter.cs" />
     <Compile Include="Funktionen\BlueScreen.cs">
       <SubType>Form</SubType>
     </Compile>

