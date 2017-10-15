@@ -165,7 +165,7 @@ namespace VirusV8_Client
 
                     if (something.Contains("PopUpMessage"))
                     {
-                        //MouseSimulation:Text
+                        //PopUpMessage:Text
                         try
                         {
                             string[] Text = something.Split(':');
