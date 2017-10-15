@@ -18,7 +18,7 @@ namespace VirusV8
         {
             InitializeComponent();
             this.s = s;
-        }
+        }//
 
         private void button1_Click(object sender, EventArgs e)
         {
