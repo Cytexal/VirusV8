@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoSpace.cs" />
-    <Compile Include="AutoEnter.cs" />
+    <Compile Include="Funktionen\AutoSpace.cs" />
+    <Compile Include="Funktionen\AutoEnter.cs" />
     <Compile Include="Funktionen\BlueScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +55,7 @@
       <DependentUpon>BlueScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Client.cs" />
+    <Compile Include="Funktionen\DesktopTXT.cs" />
     <Compile Include="Funktionen\ExitVirus.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
