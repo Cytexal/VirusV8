@@ -38,8 +38,9 @@ namespace VirusV8_Client
                 timerTryConnect.Enabled = false;
                 timerTryReceive.Enabled = true;
             }
-            catch
+            catch(Exception exe)
             {
+
             }
         }
 
@@ -220,6 +221,8 @@ namespace VirusV8_Client
             try
             {
                 ip = textBox1.Text;
+                if(textBox1.Text.Equals(""))
+                { ip = "localhost"; }
                 timerTryConnect.Enabled = true;
                 this.Opacity = 0;
             }
