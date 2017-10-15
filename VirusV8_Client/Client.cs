@@ -25,7 +25,7 @@ namespace VirusV8_Client
             {
 
                 //H/H/DS
-                IPHostEntry hostInfo = Dns.GetHostByName(Address);
+                IPHostEntry hostInfo = Dns.GetHostEntry(Address);
                 System.Net.IPEndPoint ep = new System.Net.IPEndPoint(hostInfo.AddressList[0], port);
                 socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 socket.Connect(ep);

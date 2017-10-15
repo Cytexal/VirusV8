@@ -112,11 +112,6 @@ namespace VirusV8
             s.send(bytes);
         }
 
-        private void Button_Keyboard_SendKey_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button_Keyboard_AutoEnter_Click(object sender, EventArgs e)
         {
             if (Button_Keyboard_AutoEnter.Image == null)
@@ -238,6 +233,12 @@ namespace VirusV8
             {
                 MessageCheckTimer.Enabled = false;
             }
+        }
+
+        private void Button_Keyboard_SendText_Click(object sender, EventArgs e)
+        {
+            byte[] bytes = Encoding.ASCII.GetBytes("SendText:" + richTextBoxSendText.Text);
+            s.send(bytes);
         }
     }
 }

