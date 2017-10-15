@@ -34,6 +34,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.monoFlat_HeaderLabel1 = new MonoFlat.Class1.MonoFlat_HeaderLabel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.Button_Keyboard_AltTab = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Keyboard_StrgAltEnt = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Keyboard_Space = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Keyboard_Enter = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Keyboard_AltF4 = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Keyboard_AutoSpace = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Keyboard_AutoEnter = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Keyboard_SendKey = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_Keyboard_Deaktivate = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.monoFlat_ButtonPopUpMessage = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_BlueScreen = new MonoFlat.Class1.MonoFlat_Button();
@@ -47,16 +57,6 @@
             this.Button_Maus_DoubleKlick = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_Maus_Klick = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_Maus_Freeze = new MonoFlat.Class1.MonoFlat_Button();
-            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
-            this.Button_Keyboard_AltTab = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Keyboard_StrgAltEnt = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Keyboard_Space = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Keyboard_Enter = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Keyboard_AltF4 = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Keyboard_AutoSpace = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Keyboard_AutoEnter = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Keyboard_SendKey = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_Keyboard_Deaktivate = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -64,9 +64,9 @@
             this.MessageCheckTimer = new System.Windows.Forms.Timer(this.components);
             this.bunifuFlatButtonSend = new Bunifu.Framework.UI.BunifuFlatButton();
             this.metroTabControl1.SuspendLayout();
+            this.metroTabPage3.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
-            this.metroTabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // TextBox_Commands
@@ -112,9 +112,9 @@
             // 
             // metroTabControl1
             // 
+            this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
-            this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.CustomBackground = false;
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Medium;
@@ -129,6 +129,161 @@
             this.metroTabControl1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabControl1.UseStyleColors = false;
+            // 
+            // metroTabPage3
+            // 
+            this.metroTabPage3.Controls.Add(this.Button_Keyboard_AltTab);
+            this.metroTabPage3.Controls.Add(this.Button_Keyboard_StrgAltEnt);
+            this.metroTabPage3.Controls.Add(this.Button_Keyboard_Space);
+            this.metroTabPage3.Controls.Add(this.Button_Keyboard_Enter);
+            this.metroTabPage3.Controls.Add(this.Button_Keyboard_AltF4);
+            this.metroTabPage3.Controls.Add(this.Button_Keyboard_AutoSpace);
+            this.metroTabPage3.Controls.Add(this.Button_Keyboard_AutoEnter);
+            this.metroTabPage3.Controls.Add(this.Button_Keyboard_SendKey);
+            this.metroTabPage3.Controls.Add(this.Button_Keyboard_Deaktivate);
+            this.metroTabPage3.CustomBackground = false;
+            this.metroTabPage3.HorizontalScrollbar = false;
+            this.metroTabPage3.HorizontalScrollbarBarColor = true;
+            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.HorizontalScrollbarSize = 10;
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage3.Name = "metroTabPage3";
+            this.metroTabPage3.Size = new System.Drawing.Size(473, 294);
+            this.metroTabPage3.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTabPage3.StyleManager = null;
+            this.metroTabPage3.TabIndex = 2;
+            this.metroTabPage3.Text = "Tastatur-Steuerung";
+            this.metroTabPage3.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTabPage3.VerticalScrollbar = false;
+            this.metroTabPage3.VerticalScrollbarBarColor = true;
+            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.VerticalScrollbarSize = 10;
+            // 
+            // Button_Keyboard_AltTab
+            // 
+            this.Button_Keyboard_AltTab.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Keyboard_AltTab.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Keyboard_AltTab.Image = null;
+            this.Button_Keyboard_AltTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Keyboard_AltTab.Location = new System.Drawing.Point(317, 210);
+            this.Button_Keyboard_AltTab.Name = "Button_Keyboard_AltTab";
+            this.Button_Keyboard_AltTab.Size = new System.Drawing.Size(150, 40);
+            this.Button_Keyboard_AltTab.TabIndex = 10;
+            this.Button_Keyboard_AltTab.Text = "Alt+Tab";
+            this.Button_Keyboard_AltTab.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Keyboard_AltTab.Click += new System.EventHandler(this.Button_Keyboard_AltTab_Click);
+            // 
+            // Button_Keyboard_StrgAltEnt
+            // 
+            this.Button_Keyboard_StrgAltEnt.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Keyboard_StrgAltEnt.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Keyboard_StrgAltEnt.Image = null;
+            this.Button_Keyboard_StrgAltEnt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Keyboard_StrgAltEnt.Location = new System.Drawing.Point(317, 163);
+            this.Button_Keyboard_StrgAltEnt.Name = "Button_Keyboard_StrgAltEnt";
+            this.Button_Keyboard_StrgAltEnt.Size = new System.Drawing.Size(150, 40);
+            this.Button_Keyboard_StrgAltEnt.TabIndex = 9;
+            this.Button_Keyboard_StrgAltEnt.Text = "Alt+Strg+Entf";
+            this.Button_Keyboard_StrgAltEnt.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Keyboard_StrgAltEnt.Click += new System.EventHandler(this.Button_Keyboard_StrgAltEnt_Click);
+            // 
+            // Button_Keyboard_Space
+            // 
+            this.Button_Keyboard_Space.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Keyboard_Space.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Keyboard_Space.Image = null;
+            this.Button_Keyboard_Space.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Keyboard_Space.Location = new System.Drawing.Point(317, 116);
+            this.Button_Keyboard_Space.Name = "Button_Keyboard_Space";
+            this.Button_Keyboard_Space.Size = new System.Drawing.Size(150, 40);
+            this.Button_Keyboard_Space.TabIndex = 8;
+            this.Button_Keyboard_Space.Text = "Space";
+            this.Button_Keyboard_Space.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Keyboard_Space.Click += new System.EventHandler(this.Button_Keyboard_Space_Click);
+            // 
+            // Button_Keyboard_Enter
+            // 
+            this.Button_Keyboard_Enter.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Keyboard_Enter.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Keyboard_Enter.Image = null;
+            this.Button_Keyboard_Enter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Keyboard_Enter.Location = new System.Drawing.Point(317, 69);
+            this.Button_Keyboard_Enter.Name = "Button_Keyboard_Enter";
+            this.Button_Keyboard_Enter.Size = new System.Drawing.Size(150, 40);
+            this.Button_Keyboard_Enter.TabIndex = 7;
+            this.Button_Keyboard_Enter.Text = "Enter";
+            this.Button_Keyboard_Enter.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Keyboard_Enter.Click += new System.EventHandler(this.Button_Keyboard_Enter_Click);
+            // 
+            // Button_Keyboard_AltF4
+            // 
+            this.Button_Keyboard_AltF4.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Keyboard_AltF4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Keyboard_AltF4.Image = null;
+            this.Button_Keyboard_AltF4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Keyboard_AltF4.Location = new System.Drawing.Point(317, 22);
+            this.Button_Keyboard_AltF4.Name = "Button_Keyboard_AltF4";
+            this.Button_Keyboard_AltF4.Size = new System.Drawing.Size(150, 40);
+            this.Button_Keyboard_AltF4.TabIndex = 6;
+            this.Button_Keyboard_AltF4.Text = "Alt+F4";
+            this.Button_Keyboard_AltF4.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Keyboard_AltF4.Click += new System.EventHandler(this.Button_Keyboard_AltF4_Click);
+            // 
+            // Button_Keyboard_AutoSpace
+            // 
+            this.Button_Keyboard_AutoSpace.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Keyboard_AutoSpace.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Keyboard_AutoSpace.Image = null;
+            this.Button_Keyboard_AutoSpace.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Keyboard_AutoSpace.Location = new System.Drawing.Point(12, 202);
+            this.Button_Keyboard_AutoSpace.Name = "Button_Keyboard_AutoSpace";
+            this.Button_Keyboard_AutoSpace.Size = new System.Drawing.Size(150, 40);
+            this.Button_Keyboard_AutoSpace.TabIndex = 5;
+            this.Button_Keyboard_AutoSpace.Text = "Auto. Space";
+            this.Button_Keyboard_AutoSpace.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Keyboard_AutoSpace.Click += new System.EventHandler(this.Button_Keyboard_AutoSpace_Click);
+            // 
+            // Button_Keyboard_AutoEnter
+            // 
+            this.Button_Keyboard_AutoEnter.BackColor = System.Drawing.Color.DimGray;
+            this.Button_Keyboard_AutoEnter.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Keyboard_AutoEnter.Image = null;
+            this.Button_Keyboard_AutoEnter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Keyboard_AutoEnter.Location = new System.Drawing.Point(12, 156);
+            this.Button_Keyboard_AutoEnter.Name = "Button_Keyboard_AutoEnter";
+            this.Button_Keyboard_AutoEnter.Size = new System.Drawing.Size(150, 40);
+            this.Button_Keyboard_AutoEnter.TabIndex = 4;
+            this.Button_Keyboard_AutoEnter.Text = "Auto. Enter";
+            this.Button_Keyboard_AutoEnter.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Keyboard_AutoEnter.Click += new System.EventHandler(this.Button_Keyboard_AutoEnter_Click);
+            // 
+            // Button_Keyboard_SendKey
+            // 
+            this.Button_Keyboard_SendKey.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Keyboard_SendKey.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Keyboard_SendKey.Image = null;
+            this.Button_Keyboard_SendKey.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Keyboard_SendKey.Location = new System.Drawing.Point(12, 69);
+            this.Button_Keyboard_SendKey.Name = "Button_Keyboard_SendKey";
+            this.Button_Keyboard_SendKey.Size = new System.Drawing.Size(150, 40);
+            this.Button_Keyboard_SendKey.TabIndex = 3;
+            this.Button_Keyboard_SendKey.Text = "Text senden";
+            this.Button_Keyboard_SendKey.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Keyboard_SendKey.Click += new System.EventHandler(this.Button_Keyboard_SendKey_Click);
+            // 
+            // Button_Keyboard_Deaktivate
+            // 
+            this.Button_Keyboard_Deaktivate.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Keyboard_Deaktivate.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_Keyboard_Deaktivate.Image = null;
+            this.Button_Keyboard_Deaktivate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Keyboard_Deaktivate.Location = new System.Drawing.Point(12, 22);
+            this.Button_Keyboard_Deaktivate.Name = "Button_Keyboard_Deaktivate";
+            this.Button_Keyboard_Deaktivate.Size = new System.Drawing.Size(150, 40);
+            this.Button_Keyboard_Deaktivate.TabIndex = 2;
+            this.Button_Keyboard_Deaktivate.Text = "Deaktivieren";
+            this.Button_Keyboard_Deaktivate.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_Keyboard_Deaktivate.Click += new System.EventHandler(this.Button_Keyboard_Deaktivate_Click);
             // 
             // metroTabPage1
             // 
@@ -337,161 +492,6 @@
             this.Button_Maus_Freeze.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Button_Maus_Freeze.Click += new System.EventHandler(this.Button_Maus_Freeze_Click);
             // 
-            // metroTabPage3
-            // 
-            this.metroTabPage3.Controls.Add(this.Button_Keyboard_AltTab);
-            this.metroTabPage3.Controls.Add(this.Button_Keyboard_StrgAltEnt);
-            this.metroTabPage3.Controls.Add(this.Button_Keyboard_Space);
-            this.metroTabPage3.Controls.Add(this.Button_Keyboard_Enter);
-            this.metroTabPage3.Controls.Add(this.Button_Keyboard_AltF4);
-            this.metroTabPage3.Controls.Add(this.Button_Keyboard_AutoSpace);
-            this.metroTabPage3.Controls.Add(this.Button_Keyboard_AutoEnter);
-            this.metroTabPage3.Controls.Add(this.Button_Keyboard_SendKey);
-            this.metroTabPage3.Controls.Add(this.Button_Keyboard_Deaktivate);
-            this.metroTabPage3.CustomBackground = false;
-            this.metroTabPage3.HorizontalScrollbar = false;
-            this.metroTabPage3.HorizontalScrollbarBarColor = true;
-            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 10;
-            this.metroTabPage3.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(473, 294);
-            this.metroTabPage3.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTabPage3.StyleManager = null;
-            this.metroTabPage3.TabIndex = 2;
-            this.metroTabPage3.Text = "Tastatur-Steuerung";
-            this.metroTabPage3.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTabPage3.VerticalScrollbar = false;
-            this.metroTabPage3.VerticalScrollbarBarColor = true;
-            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 10;
-            // 
-            // Button_Keyboard_AltTab
-            // 
-            this.Button_Keyboard_AltTab.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Keyboard_AltTab.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Keyboard_AltTab.Image = null;
-            this.Button_Keyboard_AltTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Keyboard_AltTab.Location = new System.Drawing.Point(317, 210);
-            this.Button_Keyboard_AltTab.Name = "Button_Keyboard_AltTab";
-            this.Button_Keyboard_AltTab.Size = new System.Drawing.Size(150, 40);
-            this.Button_Keyboard_AltTab.TabIndex = 10;
-            this.Button_Keyboard_AltTab.Text = "Alt+Tab";
-            this.Button_Keyboard_AltTab.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Keyboard_AltTab.Click += new System.EventHandler(this.Button_Keyboard_AltTab_Click);
-            // 
-            // Button_Keyboard_StrgAltEnt
-            // 
-            this.Button_Keyboard_StrgAltEnt.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Keyboard_StrgAltEnt.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Keyboard_StrgAltEnt.Image = null;
-            this.Button_Keyboard_StrgAltEnt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Keyboard_StrgAltEnt.Location = new System.Drawing.Point(317, 163);
-            this.Button_Keyboard_StrgAltEnt.Name = "Button_Keyboard_StrgAltEnt";
-            this.Button_Keyboard_StrgAltEnt.Size = new System.Drawing.Size(150, 40);
-            this.Button_Keyboard_StrgAltEnt.TabIndex = 9;
-            this.Button_Keyboard_StrgAltEnt.Text = "Alt+Strg+Entf";
-            this.Button_Keyboard_StrgAltEnt.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Keyboard_StrgAltEnt.Click += new System.EventHandler(this.Button_Keyboard_StrgAltEnt_Click);
-            // 
-            // Button_Keyboard_Space
-            // 
-            this.Button_Keyboard_Space.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Keyboard_Space.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Keyboard_Space.Image = null;
-            this.Button_Keyboard_Space.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Keyboard_Space.Location = new System.Drawing.Point(317, 116);
-            this.Button_Keyboard_Space.Name = "Button_Keyboard_Space";
-            this.Button_Keyboard_Space.Size = new System.Drawing.Size(150, 40);
-            this.Button_Keyboard_Space.TabIndex = 8;
-            this.Button_Keyboard_Space.Text = "Space";
-            this.Button_Keyboard_Space.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Keyboard_Space.Click += new System.EventHandler(this.Button_Keyboard_Space_Click);
-            // 
-            // Button_Keyboard_Enter
-            // 
-            this.Button_Keyboard_Enter.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Keyboard_Enter.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Keyboard_Enter.Image = null;
-            this.Button_Keyboard_Enter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Keyboard_Enter.Location = new System.Drawing.Point(317, 69);
-            this.Button_Keyboard_Enter.Name = "Button_Keyboard_Enter";
-            this.Button_Keyboard_Enter.Size = new System.Drawing.Size(150, 40);
-            this.Button_Keyboard_Enter.TabIndex = 7;
-            this.Button_Keyboard_Enter.Text = "Enter";
-            this.Button_Keyboard_Enter.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Keyboard_Enter.Click += new System.EventHandler(this.Button_Keyboard_Enter_Click);
-            // 
-            // Button_Keyboard_AltF4
-            // 
-            this.Button_Keyboard_AltF4.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Keyboard_AltF4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Keyboard_AltF4.Image = null;
-            this.Button_Keyboard_AltF4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Keyboard_AltF4.Location = new System.Drawing.Point(317, 22);
-            this.Button_Keyboard_AltF4.Name = "Button_Keyboard_AltF4";
-            this.Button_Keyboard_AltF4.Size = new System.Drawing.Size(150, 40);
-            this.Button_Keyboard_AltF4.TabIndex = 6;
-            this.Button_Keyboard_AltF4.Text = "Alt+F4";
-            this.Button_Keyboard_AltF4.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Keyboard_AltF4.Click += new System.EventHandler(this.Button_Keyboard_AltF4_Click);
-            // 
-            // Button_Keyboard_AutoSpace
-            // 
-            this.Button_Keyboard_AutoSpace.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Keyboard_AutoSpace.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Keyboard_AutoSpace.Image = null;
-            this.Button_Keyboard_AutoSpace.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Keyboard_AutoSpace.Location = new System.Drawing.Point(12, 202);
-            this.Button_Keyboard_AutoSpace.Name = "Button_Keyboard_AutoSpace";
-            this.Button_Keyboard_AutoSpace.Size = new System.Drawing.Size(150, 40);
-            this.Button_Keyboard_AutoSpace.TabIndex = 5;
-            this.Button_Keyboard_AutoSpace.Text = "Auto. Space";
-            this.Button_Keyboard_AutoSpace.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Keyboard_AutoSpace.Click += new System.EventHandler(this.Button_Keyboard_AutoSpace_Click);
-            // 
-            // Button_Keyboard_AutoEnter
-            // 
-            this.Button_Keyboard_AutoEnter.BackColor = System.Drawing.Color.DimGray;
-            this.Button_Keyboard_AutoEnter.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Keyboard_AutoEnter.Image = null;
-            this.Button_Keyboard_AutoEnter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Keyboard_AutoEnter.Location = new System.Drawing.Point(12, 156);
-            this.Button_Keyboard_AutoEnter.Name = "Button_Keyboard_AutoEnter";
-            this.Button_Keyboard_AutoEnter.Size = new System.Drawing.Size(150, 40);
-            this.Button_Keyboard_AutoEnter.TabIndex = 4;
-            this.Button_Keyboard_AutoEnter.Text = "Auto. Enter";
-            this.Button_Keyboard_AutoEnter.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Keyboard_AutoEnter.Click += new System.EventHandler(this.Button_Keyboard_AutoEnter_Click);
-            // 
-            // Button_Keyboard_SendKey
-            // 
-            this.Button_Keyboard_SendKey.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Keyboard_SendKey.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Keyboard_SendKey.Image = null;
-            this.Button_Keyboard_SendKey.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Keyboard_SendKey.Location = new System.Drawing.Point(12, 69);
-            this.Button_Keyboard_SendKey.Name = "Button_Keyboard_SendKey";
-            this.Button_Keyboard_SendKey.Size = new System.Drawing.Size(150, 40);
-            this.Button_Keyboard_SendKey.TabIndex = 3;
-            this.Button_Keyboard_SendKey.Text = "Text senden";
-            this.Button_Keyboard_SendKey.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Keyboard_SendKey.Click += new System.EventHandler(this.Button_Keyboard_SendKey_Click);
-            // 
-            // Button_Keyboard_Deaktivate
-            // 
-            this.Button_Keyboard_Deaktivate.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Keyboard_Deaktivate.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_Keyboard_Deaktivate.Image = null;
-            this.Button_Keyboard_Deaktivate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Keyboard_Deaktivate.Location = new System.Drawing.Point(12, 22);
-            this.Button_Keyboard_Deaktivate.Name = "Button_Keyboard_Deaktivate";
-            this.Button_Keyboard_Deaktivate.Size = new System.Drawing.Size(150, 40);
-            this.Button_Keyboard_Deaktivate.TabIndex = 2;
-            this.Button_Keyboard_Deaktivate.Text = "Deaktivieren";
-            this.Button_Keyboard_Deaktivate.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_Keyboard_Deaktivate.Click += new System.EventHandler(this.Button_Keyboard_Deaktivate_Click);
-            // 
             // metroTabPage4
             // 
             this.metroTabPage4.CustomBackground = false;
@@ -536,6 +536,7 @@
             // 
             // timerSendMousePosition
             // 
+            this.timerSendMousePosition.Interval = 2000;
             this.timerSendMousePosition.Tick += new System.EventHandler(this.timerSendMousePosition_Tick);
             // 
             // MessageCheckTimer
@@ -596,9 +597,9 @@
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClientVerwaltung_FormClosed);
             this.metroTabControl1.ResumeLayout(false);
+            this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage2.ResumeLayout(false);
-            this.metroTabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

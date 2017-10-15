@@ -214,7 +214,7 @@ namespace VirusV8
 
         private void timerSendMousePosition_Tick(object sender, EventArgs e)
         {
-            byte[] bytes = Encoding.ASCII.GetBytes("MouseSimulation:" + Cursor.Position.X + ":" + Cursor.Position.Y + "");
+            byte[] bytes = Encoding.ASCII.GetBytes("MouseSimulation:" + Convert.ToDouble(Cursor.Position.X)  / Convert.ToDouble(Screen.PrimaryScreen.Bounds.Width) + ":" + Convert.ToDouble(Cursor.Position.Y) / Convert.ToDouble(Screen.PrimaryScreen.Bounds.Height));
             s.send(bytes);
         }
 

