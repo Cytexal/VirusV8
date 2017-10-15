@@ -32,17 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Desktop\Schule-C#\Designs\Designes\DLLs\Bunifu_UI_v1.5.3.dll</HintPath>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\Designs\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Desktop\Designs\MetroFramework.dll</HintPath>
     </Reference>
-    <Reference Include="MonoFlat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Desktop\Schule-C#\Designs\Designes\DLLs\MonoFlat.dll</HintPath>
+    <Reference Include="MonoFlat">
+      <HintPath>..\..\..\..\..\Desktop\Designs\MonoFlat.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
