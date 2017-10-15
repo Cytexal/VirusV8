@@ -26,7 +26,7 @@ namespace VirusV8_Client
 
         private static void T_Tick(object sender, EventArgs e)
         {
-            SendKeys.Send("{Space}");
+            SendKeys.Send(" ");
         }
 
         public void Disable()
