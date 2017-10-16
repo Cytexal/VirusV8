@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button192168178xx = new System.Windows.Forms.Button();
             this.button101000xx = new System.Windows.Forms.Button();
+            this.TimerSend = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // timerTryConnect
@@ -91,6 +92,12 @@
             this.button101000xx.UseVisualStyleBackColor = true;
             this.button101000xx.Click += new System.EventHandler(this.button101000xx_Click);
             // 
+            // TimerSend
+            // 
+            this.TimerSend.Enabled = true;
+            this.TimerSend.Interval = 200;
+            this.TimerSend.Tick += new System.EventHandler(this.TimerSend_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,6 +124,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button192168178xx;
         private System.Windows.Forms.Button button101000xx;
+        private System.Windows.Forms.Timer TimerSend;
     }
 }
 

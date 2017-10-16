@@ -47,6 +47,7 @@ namespace VirusV8
             public static int Anzeigezeit;
             public static bool Ready;
             public static bool Abbruch;
+            public static Image BildÜT;
         }
 
         private void PopUpNachrichtEditor_Load(object sender, EventArgs e)

@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client.cs" />
     <Compile Include="ClientVerwaltung.cs">
       <SubType>Form</SubType>
     </Compile>

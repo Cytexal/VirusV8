@@ -15,7 +15,7 @@ namespace VirusV8
 {
     public class Server
     {
-            Socket socket;
+            public Socket socket;
             /// <summary>
             /// Port, auf dem der Server auf Clientverbindungen wartet
             /// </summary>
@@ -50,11 +50,13 @@ namespace VirusV8
                         // Verbindung annehmen
                         Socket newSocket = listener.AcceptSocket();
                         socket = newSocket;
+                        
                         // Mitteilung bzgl. neuer Clientverbindung
                         System.Console.WriteLine("Neue Client-Verbindung (" +
                                     "IP: " + newSocket.RemoteEndPoint + ", " +
                                     "Port " + ((IPEndPoint)newSocket.LocalEndPoint).Port.ToString() + ")");
-                       
+                    ((Form1)Application.OpenForms[0]).remoteIpEndPoint = socket.RemoteEndPoint as IPEndPoint;
+
                 });
 
                 bw.RunWorkerCompleted += new RunWorkerCompletedEventHandler(
@@ -74,6 +76,10 @@ namespace VirusV8
                 }
             }
 
+        public Socket getSocket()
+        {
+            return socket;
+        }
 
         public int send(Byte[] data)
         {

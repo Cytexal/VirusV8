@@ -22,17 +22,22 @@
 
         #region Vom Windows Form-Designer generierter Code
 
+        
+
         /// <summary>
         /// Erforderliche Methode für die Designerunterstützung.
         /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.metroProgressSpinner1 = new MetroFramework.Controls.MetroProgressSpinner();
             this.monoFlat_Label1 = new MonoFlat.Class1.MonoFlat_Label();
             this.Button_ServerStart = new System.Windows.Forms.Button();
             this.Label_Titel = new System.Windows.Forms.Label();
+            this.timerTryConnect = new System.Windows.Forms.Timer(this.components);
+            this.timerTryReceive = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // metroProgressSpinner1
@@ -85,6 +90,17 @@
             this.Label_Titel.TabIndex = 0;
             this.Label_Titel.Text = "Server Initialisieren";
             // 
+            // timerTryConnect
+            // 
+            this.timerTryConnect.Enabled = true;
+            this.timerTryConnect.Interval = 1000;
+            this.timerTryConnect.Tick += new System.EventHandler(this.timerTryConnect_Tick_1);
+            // 
+            // timerTryReceive
+            // 
+            this.timerTryReceive.Interval = 30;
+            this.timerTryReceive.Tick += new System.EventHandler(this.timerTryReceive_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,6 +126,8 @@
         private MonoFlat.Class1.MonoFlat_Label monoFlat_Label1;
         private System.Windows.Forms.Button Button_ServerStart;
         private System.Windows.Forms.Label Label_Titel;
+        public System.Windows.Forms.Timer timerTryConnect;
+        public System.Windows.Forms.Timer timerTryReceive;
     }
 }
 

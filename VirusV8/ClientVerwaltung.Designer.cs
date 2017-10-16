@@ -36,6 +36,13 @@
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.monoFlat_ButtonTXTSpam = new MonoFlat.Class1.MonoFlat_Button();
+            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.monoFlat_ButtonPopUpMessage = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_BlueScreen = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_VirusDisableInterrupts = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_VirusConnectionReset = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_VirusShutdown = new MonoFlat.Class1.MonoFlat_Button();
+            this.Button_VirusExit = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.Button_Maus_Simulate = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_Maus_Disable = new MonoFlat.Class1.MonoFlat_Button();
@@ -54,13 +61,6 @@
             this.Button_Keyboard_AutoSpace = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_Keyboard_AutoEnter = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_Keyboard_Deaktivate = new MonoFlat.Class1.MonoFlat_Button();
-            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.monoFlat_ButtonPopUpMessage = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_BlueScreen = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_VirusDisableInterrupts = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_VirusConnectionReset = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_VirusShutdown = new MonoFlat.Class1.MonoFlat_Button();
-            this.Button_VirusExit = new MonoFlat.Class1.MonoFlat_Button();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.timerSendMousePosition = new System.Windows.Forms.Timer(this.components);
@@ -68,13 +68,20 @@
             this.bunifuFlatButtonSend = new Bunifu.Framework.UI.BunifuFlatButton();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBoxLiveÜbertragung = new System.Windows.Forms.PictureBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.numericUpDown_Bild = new System.Windows.Forms.NumericUpDown();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.timerCheckForPic = new System.Windows.Forms.Timer(this.components);
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage4.SuspendLayout();
+            this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLiveÜbertragung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Bild)).BeginInit();
             this.SuspendLayout();
             // 
             // TextBox_Commands
@@ -172,6 +179,118 @@
             this.monoFlat_ButtonTXTSpam.Text = ".txt Spam";
             this.monoFlat_ButtonTXTSpam.TextAlignment = System.Drawing.StringAlignment.Center;
             this.monoFlat_ButtonTXTSpam.Click += new System.EventHandler(this.monoFlat_ButtonDektopTXT_Click);
+            // 
+            // metroTabPage1
+            // 
+            this.metroTabPage1.Controls.Add(this.monoFlat_ButtonPopUpMessage);
+            this.metroTabPage1.Controls.Add(this.Button_BlueScreen);
+            this.metroTabPage1.Controls.Add(this.Button_VirusDisableInterrupts);
+            this.metroTabPage1.Controls.Add(this.Button_VirusConnectionReset);
+            this.metroTabPage1.Controls.Add(this.Button_VirusShutdown);
+            this.metroTabPage1.Controls.Add(this.Button_VirusExit);
+            this.metroTabPage1.CustomBackground = false;
+            this.metroTabPage1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.metroTabPage1.HorizontalScrollbar = false;
+            this.metroTabPage1.HorizontalScrollbarBarColor = true;
+            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.HorizontalScrollbarSize = 10;
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage1.Name = "metroTabPage1";
+            this.metroTabPage1.Size = new System.Drawing.Size(473, 294);
+            this.metroTabPage1.Style = MetroFramework.MetroColorStyle.Brown;
+            this.metroTabPage1.StyleManager = null;
+            this.metroTabPage1.TabIndex = 0;
+            this.metroTabPage1.Text = "Allgemeine Steuerung";
+            this.metroTabPage1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTabPage1.UseVisualStyleBackColor = true;
+            this.metroTabPage1.VerticalScrollbar = false;
+            this.metroTabPage1.VerticalScrollbarBarColor = true;
+            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.VerticalScrollbarSize = 10;
+            // 
+            // monoFlat_ButtonPopUpMessage
+            // 
+            this.monoFlat_ButtonPopUpMessage.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_ButtonPopUpMessage.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.monoFlat_ButtonPopUpMessage.Image = null;
+            this.monoFlat_ButtonPopUpMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.monoFlat_ButtonPopUpMessage.Location = new System.Drawing.Point(175, 18);
+            this.monoFlat_ButtonPopUpMessage.Name = "monoFlat_ButtonPopUpMessage";
+            this.monoFlat_ButtonPopUpMessage.Size = new System.Drawing.Size(150, 40);
+            this.monoFlat_ButtonPopUpMessage.TabIndex = 9;
+            this.monoFlat_ButtonPopUpMessage.Text = "PopUp-Nachicht schicken";
+            this.monoFlat_ButtonPopUpMessage.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.monoFlat_ButtonPopUpMessage.Click += new System.EventHandler(this.monoFlat_ButtonPopUpMessage_Click);
+            // 
+            // Button_BlueScreen
+            // 
+            this.Button_BlueScreen.BackColor = System.Drawing.Color.Transparent;
+            this.Button_BlueScreen.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_BlueScreen.Image = null;
+            this.Button_BlueScreen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_BlueScreen.Location = new System.Drawing.Point(11, 157);
+            this.Button_BlueScreen.Name = "Button_BlueScreen";
+            this.Button_BlueScreen.Size = new System.Drawing.Size(150, 40);
+            this.Button_BlueScreen.TabIndex = 8;
+            this.Button_BlueScreen.Text = "BlueScreen";
+            this.Button_BlueScreen.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_BlueScreen.Click += new System.EventHandler(this.Button_BlueScreen_Click);
+            // 
+            // Button_VirusDisableInterrupts
+            // 
+            this.Button_VirusDisableInterrupts.BackColor = System.Drawing.Color.Transparent;
+            this.Button_VirusDisableInterrupts.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_VirusDisableInterrupts.Image = null;
+            this.Button_VirusDisableInterrupts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_VirusDisableInterrupts.Location = new System.Drawing.Point(11, 203);
+            this.Button_VirusDisableInterrupts.Name = "Button_VirusDisableInterrupts";
+            this.Button_VirusDisableInterrupts.Size = new System.Drawing.Size(150, 40);
+            this.Button_VirusDisableInterrupts.TabIndex = 7;
+            this.Button_VirusDisableInterrupts.Text = "Eingabe verhindern";
+            this.Button_VirusDisableInterrupts.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_VirusDisableInterrupts.Click += new System.EventHandler(this.Button_VirusDisableInterrupts_Click);
+            // 
+            // Button_VirusConnectionReset
+            // 
+            this.Button_VirusConnectionReset.BackColor = System.Drawing.Color.Transparent;
+            this.Button_VirusConnectionReset.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_VirusConnectionReset.Image = null;
+            this.Button_VirusConnectionReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_VirusConnectionReset.Location = new System.Drawing.Point(11, 111);
+            this.Button_VirusConnectionReset.Name = "Button_VirusConnectionReset";
+            this.Button_VirusConnectionReset.Size = new System.Drawing.Size(150, 40);
+            this.Button_VirusConnectionReset.TabIndex = 6;
+            this.Button_VirusConnectionReset.Text = "Verbindung trennen";
+            this.Button_VirusConnectionReset.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_VirusConnectionReset.Click += new System.EventHandler(this.Button_VirusConnectionReset_Click);
+            // 
+            // Button_VirusShutdown
+            // 
+            this.Button_VirusShutdown.BackColor = System.Drawing.Color.Transparent;
+            this.Button_VirusShutdown.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_VirusShutdown.Image = null;
+            this.Button_VirusShutdown.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_VirusShutdown.Location = new System.Drawing.Point(11, 65);
+            this.Button_VirusShutdown.Name = "Button_VirusShutdown";
+            this.Button_VirusShutdown.Size = new System.Drawing.Size(150, 40);
+            this.Button_VirusShutdown.TabIndex = 4;
+            this.Button_VirusShutdown.Text = "PC Herunterfahren";
+            this.Button_VirusShutdown.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_VirusShutdown.Click += new System.EventHandler(this.Button_VirusShutdown_Click);
+            // 
+            // Button_VirusExit
+            // 
+            this.Button_VirusExit.BackColor = System.Drawing.Color.Transparent;
+            this.Button_VirusExit.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Button_VirusExit.Image = null;
+            this.Button_VirusExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_VirusExit.Location = new System.Drawing.Point(11, 18);
+            this.Button_VirusExit.Name = "Button_VirusExit";
+            this.Button_VirusExit.Size = new System.Drawing.Size(150, 40);
+            this.Button_VirusExit.TabIndex = 2;
+            this.Button_VirusExit.Text = "Virus beenden";
+            this.Button_VirusExit.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Button_VirusExit.Click += new System.EventHandler(this.Button_VirusExit_Click);
             // 
             // metroTabPage2
             // 
@@ -442,118 +561,6 @@
             this.Button_Keyboard_Deaktivate.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Button_Keyboard_Deaktivate.Click += new System.EventHandler(this.Button_Keyboard_Deaktivate_Click);
             // 
-            // metroTabPage1
-            // 
-            this.metroTabPage1.Controls.Add(this.monoFlat_ButtonPopUpMessage);
-            this.metroTabPage1.Controls.Add(this.Button_BlueScreen);
-            this.metroTabPage1.Controls.Add(this.Button_VirusDisableInterrupts);
-            this.metroTabPage1.Controls.Add(this.Button_VirusConnectionReset);
-            this.metroTabPage1.Controls.Add(this.Button_VirusShutdown);
-            this.metroTabPage1.Controls.Add(this.Button_VirusExit);
-            this.metroTabPage1.CustomBackground = false;
-            this.metroTabPage1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.metroTabPage1.HorizontalScrollbar = false;
-            this.metroTabPage1.HorizontalScrollbarBarColor = true;
-            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 10;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(473, 294);
-            this.metroTabPage1.Style = MetroFramework.MetroColorStyle.Brown;
-            this.metroTabPage1.StyleManager = null;
-            this.metroTabPage1.TabIndex = 0;
-            this.metroTabPage1.Text = "Allgemeine Steuerung";
-            this.metroTabPage1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTabPage1.UseVisualStyleBackColor = true;
-            this.metroTabPage1.VerticalScrollbar = false;
-            this.metroTabPage1.VerticalScrollbarBarColor = true;
-            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 10;
-            // 
-            // monoFlat_ButtonPopUpMessage
-            // 
-            this.monoFlat_ButtonPopUpMessage.BackColor = System.Drawing.Color.Transparent;
-            this.monoFlat_ButtonPopUpMessage.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.monoFlat_ButtonPopUpMessage.Image = null;
-            this.monoFlat_ButtonPopUpMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_ButtonPopUpMessage.Location = new System.Drawing.Point(175, 18);
-            this.monoFlat_ButtonPopUpMessage.Name = "monoFlat_ButtonPopUpMessage";
-            this.monoFlat_ButtonPopUpMessage.Size = new System.Drawing.Size(150, 40);
-            this.monoFlat_ButtonPopUpMessage.TabIndex = 9;
-            this.monoFlat_ButtonPopUpMessage.Text = "PopUp-Nachicht schicken";
-            this.monoFlat_ButtonPopUpMessage.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.monoFlat_ButtonPopUpMessage.Click += new System.EventHandler(this.monoFlat_ButtonPopUpMessage_Click);
-            // 
-            // Button_BlueScreen
-            // 
-            this.Button_BlueScreen.BackColor = System.Drawing.Color.Transparent;
-            this.Button_BlueScreen.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_BlueScreen.Image = null;
-            this.Button_BlueScreen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_BlueScreen.Location = new System.Drawing.Point(11, 157);
-            this.Button_BlueScreen.Name = "Button_BlueScreen";
-            this.Button_BlueScreen.Size = new System.Drawing.Size(150, 40);
-            this.Button_BlueScreen.TabIndex = 8;
-            this.Button_BlueScreen.Text = "BlueScreen";
-            this.Button_BlueScreen.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_BlueScreen.Click += new System.EventHandler(this.Button_BlueScreen_Click);
-            // 
-            // Button_VirusDisableInterrupts
-            // 
-            this.Button_VirusDisableInterrupts.BackColor = System.Drawing.Color.Transparent;
-            this.Button_VirusDisableInterrupts.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_VirusDisableInterrupts.Image = null;
-            this.Button_VirusDisableInterrupts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_VirusDisableInterrupts.Location = new System.Drawing.Point(11, 203);
-            this.Button_VirusDisableInterrupts.Name = "Button_VirusDisableInterrupts";
-            this.Button_VirusDisableInterrupts.Size = new System.Drawing.Size(150, 40);
-            this.Button_VirusDisableInterrupts.TabIndex = 7;
-            this.Button_VirusDisableInterrupts.Text = "Eingabe verhindern";
-            this.Button_VirusDisableInterrupts.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_VirusDisableInterrupts.Click += new System.EventHandler(this.Button_VirusDisableInterrupts_Click);
-            // 
-            // Button_VirusConnectionReset
-            // 
-            this.Button_VirusConnectionReset.BackColor = System.Drawing.Color.Transparent;
-            this.Button_VirusConnectionReset.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_VirusConnectionReset.Image = null;
-            this.Button_VirusConnectionReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_VirusConnectionReset.Location = new System.Drawing.Point(11, 111);
-            this.Button_VirusConnectionReset.Name = "Button_VirusConnectionReset";
-            this.Button_VirusConnectionReset.Size = new System.Drawing.Size(150, 40);
-            this.Button_VirusConnectionReset.TabIndex = 6;
-            this.Button_VirusConnectionReset.Text = "Verbindung trennen";
-            this.Button_VirusConnectionReset.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_VirusConnectionReset.Click += new System.EventHandler(this.Button_VirusConnectionReset_Click);
-            // 
-            // Button_VirusShutdown
-            // 
-            this.Button_VirusShutdown.BackColor = System.Drawing.Color.Transparent;
-            this.Button_VirusShutdown.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_VirusShutdown.Image = null;
-            this.Button_VirusShutdown.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_VirusShutdown.Location = new System.Drawing.Point(11, 65);
-            this.Button_VirusShutdown.Name = "Button_VirusShutdown";
-            this.Button_VirusShutdown.Size = new System.Drawing.Size(150, 40);
-            this.Button_VirusShutdown.TabIndex = 4;
-            this.Button_VirusShutdown.Text = "PC Herunterfahren";
-            this.Button_VirusShutdown.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_VirusShutdown.Click += new System.EventHandler(this.Button_VirusShutdown_Click);
-            // 
-            // Button_VirusExit
-            // 
-            this.Button_VirusExit.BackColor = System.Drawing.Color.Transparent;
-            this.Button_VirusExit.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Button_VirusExit.Image = null;
-            this.Button_VirusExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_VirusExit.Location = new System.Drawing.Point(11, 18);
-            this.Button_VirusExit.Name = "Button_VirusExit";
-            this.Button_VirusExit.Size = new System.Drawing.Size(150, 40);
-            this.Button_VirusExit.TabIndex = 2;
-            this.Button_VirusExit.Text = "Virus beenden";
-            this.Button_VirusExit.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Button_VirusExit.Click += new System.EventHandler(this.Button_VirusExit_Click);
-            // 
             // bunifuCheckbox1
             // 
             this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
@@ -658,11 +665,85 @@
             this.bunifuCustomLabel2.TabIndex = 12;
             this.bunifuCustomLabel2.Text = "Mausübertragungsrate";
             // 
+            // pictureBoxLiveÜbertragung
+            // 
+            this.pictureBoxLiveÜbertragung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxLiveÜbertragung.Location = new System.Drawing.Point(505, 61);
+            this.pictureBoxLiveÜbertragung.Name = "pictureBoxLiveÜbertragung";
+            this.pictureBoxLiveÜbertragung.Size = new System.Drawing.Size(845, 489);
+            this.pictureBoxLiveÜbertragung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLiveÜbertragung.TabIndex = 13;
+            this.pictureBoxLiveÜbertragung.TabStop = false;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.CustomBackground = false;
+            this.metroLabel1.CustomForeColor = false;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel1.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel1.Location = new System.Drawing.Point(502, 30);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(174, 25);
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel1.StyleManager = null;
+            this.metroLabel1.TabIndex = 14;
+            this.metroLabel1.Text = "Live Bildübertragung:";
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel1.UseStyleColors = false;
+            // 
+            // numericUpDown_Bild
+            // 
+            this.numericUpDown_Bild.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numericUpDown_Bild.Location = new System.Drawing.Point(694, 35);
+            this.numericUpDown_Bild.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numericUpDown_Bild.Minimum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.numericUpDown_Bild.Name = "numericUpDown_Bild";
+            this.numericUpDown_Bild.Size = new System.Drawing.Size(52, 20);
+            this.numericUpDown_Bild.TabIndex = 15;
+            this.numericUpDown_Bild.Value = new decimal(new int[] {
+            80,
+            0,
+            0,
+            0});
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(666, 16);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(104, 13);
+            this.bunifuCustomLabel3.TabIndex = 16;
+            this.bunifuCustomLabel3.Text = "Bildübertragungsrate";
+            // 
+            // timerCheckForPic
+            // 
+            this.timerCheckForPic.Enabled = true;
+            this.timerCheckForPic.Interval = 10;
+            this.timerCheckForPic.Tick += new System.EventHandler(this.timerCheckForPic_Tick);
+            // 
             // ClientVerwaltung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 573);
+            this.ClientSize = new System.Drawing.Size(1373, 570);
+            this.Controls.Add(this.bunifuCustomLabel3);
+            this.Controls.Add(this.numericUpDown_Bild);
+            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.pictureBoxLiveÜbertragung);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.bunifuCustomLabel1);
@@ -679,11 +760,13 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClientVerwaltung_FormClosed);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage4.ResumeLayout(false);
+            this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.metroTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLiveÜbertragung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Bild)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -728,5 +811,10 @@
         private MonoFlat.Class1.MonoFlat_Button monoFlat_ButtonTXTSpam;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private System.Windows.Forms.PictureBox pictureBoxLiveÜbertragung;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private System.Windows.Forms.NumericUpDown numericUpDown_Bild;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
+        private System.Windows.Forms.Timer timerCheckForPic;
     }
 }
