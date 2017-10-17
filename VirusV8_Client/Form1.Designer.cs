@@ -95,7 +95,7 @@
             // TimerSend
             // 
             this.TimerSend.Enabled = true;
-            this.TimerSend.Interval = 200;
+            this.TimerSend.Interval = 150;
             this.TimerSend.Tick += new System.EventHandler(this.TimerSend_Tick);
             // 
             // Form1

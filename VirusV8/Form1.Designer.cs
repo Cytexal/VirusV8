@@ -98,7 +98,7 @@
             // 
             // timerTryReceive
             // 
-            this.timerTryReceive.Interval = 30;
+            this.timerTryReceive.Interval = 10;
             this.timerTryReceive.Tick += new System.EventHandler(this.timerTryReceive_Tick);
             // 
             // Form1

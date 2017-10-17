@@ -121,9 +121,9 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="timerTryReceive.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>159, 17</value>
+    <value>150, 19</value>
   </metadata>
   <metadata name="TimerSend.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>246, 17</value>
+    <value>284, 20</value>
   </metadata>
 </root>

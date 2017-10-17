@@ -252,14 +252,15 @@ namespace VirusV8
         {
             timerSendMousePosition.Interval = Convert.ToInt32(numericUpDown1.Value);
         }
-
+        Image Vorrübergehend;
         private void timerCheckForPic_Tick(object sender, EventArgs e)
         {
             if (PopUpNachrichtEditor.Vars.BildÜT != null)
             {
-                if (pictureBoxLiveÜbertragung.Image != PopUpNachrichtEditor.Vars.BildÜT)
+                if (PopUpNachrichtEditor.Vars.BildÜT != Vorrübergehend)
                 {
                     pictureBoxLiveÜbertragung.Image = PopUpNachrichtEditor.Vars.BildÜT;
+                    Vorrübergehend = PopUpNachrichtEditor.Vars.BildÜT;
                 }
             }
         }
